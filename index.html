@@ -3,45 +3,84 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>Ria 的作品分類集</title>
+  <title>Ria 的作品集</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>Ria 的作品集</h1>
-    <p>依分類呈現設計作品，點擊圖片可放大預覽</p>
+    <p>系統櫃設計｜建案分類整理｜點圖片可放大</p>
+    <input type="text" id="searchInput" placeholder="搜尋建案名稱或描述">
+    <select id="categoryFilter">
+      <option value="all">全部作品集</option>
+    </select>
   </header>
 
-  <section class="portfolio">
-    <h2>作品集1</h2>
-  
-    <div class="subproject">
-      <h3>陽光樹</h3>
-      <p>這個作品是我第一個設計的房子，有溫暖的感覺。</p>
-      <div class="image-group">
-        <a href="projects/作品集1/陽光樹/sunshine1.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine1.jpg" alt="sunshine1.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine10.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine10.jpg" alt="sunshine10.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine11.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine11.jpg" alt="sunshine11.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine12.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine12.jpg" alt="sunshine12.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine2.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine2.jpg" alt="sunshine2.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine3.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine3.jpg" alt="sunshine3.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine4.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine4.jpg" alt="sunshine4.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine5.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine5.jpg" alt="sunshine5.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine6.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine6.jpg" alt="sunshine6.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine7.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine7.jpg" alt="sunshine7.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine8.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine8.jpg" alt="sunshine8.jpg"></a>
-<a href="projects/作品集1/陽光樹/sunshine9.jpg" data-lightbox="陽光樹" data-title="陽光樹"><img src="projects/作品集1/陽光樹/sunshine9.jpg" alt="sunshine9.jpg"></a>
+  <div id="portfolioContainer">
 
-      </div>
-    </div>
-        </section>
-  <section class="portfolio">
-    <h2>作品集2</h2>
-  </section>
+<section class="portfolio" data-title="shine_tree" data-desc="這個作品是我第一個設計的房子，有溫暖的感覺。" data-group="Protfolio1">
+  <h2>shine_tree</h2>
+  <p>這個作品是我第一個設計的房子，有溫暖的感覺。</p>
+  <div class="image-group">
+    <a href="projects/Protfolio1/shine_tree/sunshine1.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine1.jpg" alt="sunshine1.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine10.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine10.jpg" alt="sunshine10.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine11.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine11.jpg" alt="sunshine11.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine12.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine12.jpg" alt="sunshine12.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine2.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine2.jpg" alt="sunshine2.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine3.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine3.jpg" alt="sunshine3.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine4.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine4.jpg" alt="sunshine4.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine5.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine5.jpg" alt="sunshine5.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine6.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine6.jpg" alt="sunshine6.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine7.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine7.jpg" alt="sunshine7.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine8.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine8.jpg" alt="sunshine8.jpg"></a>
+    <a href="projects/Protfolio1/shine_tree/sunshine9.jpg" data-lightbox="shine_tree" data-title="shine_tree"><img src="projects/Protfolio1/shine_tree/sunshine9.jpg" alt="sunshine9.jpg"></a>
+  </div>
+</section>
+
+  </div>
+
   <footer>
-    <p>聯絡我：<a href="https://line.me/ti/p/你的LineID">Line</a> | IG: @ria_design</p>
+    <p>聯絡我：<a href="https://line.me/ti/p/你的LineID">Line</a>｜IG: @ria_design</p>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+
+    function filterContent() {
+      const keyword = searchInput.value.toLowerCase();
+      const category = categoryFilter.value;
+
+      document.querySelectorAll('.portfolio').forEach(section => {
+        const title = section.getAttribute('data-title').toLowerCase();
+        const desc = section.getAttribute('data-desc').toLowerCase();
+        const group = section.getAttribute('data-group');
+
+        const matchKeyword = title.includes(keyword) || desc.includes(keyword);
+        const matchCategory = (category === 'all' || category === group);
+
+        section.style.display = (matchKeyword && matchCategory) ? '' : 'none';
+      });
+    }
+
+    searchInput.addEventListener('input', filterContent);
+    categoryFilter.addEventListener('change', filterContent);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const categories = new Set();
+      document.querySelectorAll('.portfolio').forEach(section => {
+        categories.add(section.getAttribute('data-group'));
+      });
+      categories.forEach(cat => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        categoryFilter.appendChild(opt);
+      });
+    });
+  </script>
 </body>
 </html>
